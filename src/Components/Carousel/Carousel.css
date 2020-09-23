@@ -1,0 +1,77 @@
+.carouselContainer {
+    margin: 0 0 5rem 0;
+}
+
+.carouselTitle {
+    font-size: 3rem;
+    color: #007e84;
+    text-transform: uppercase;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.slideLine {
+    display: flex;
+    justify-content: center;
+}
+
+.lastSlide, .nextSlide {
+    margin: auto 0;
+    background-color: rgb(63, 156, 161);
+    color: white;
+    font-size: 2rem;
+    padding: 213.5px 2rem;
+}
+.lastSlide:hover, .nextSlide:hover {
+    cursor: pointer;
+}
+
+.carouselSlide {
+    margin: 1rem auto 0 auto;
+}
+
+.caption {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.25rem;
+}
+
+.carouselDeck {
+    justify-content: center;
+    margin-top: 1rem;
+    max-height: 3.5rem;
+    display: flex;
+}
+
+.carouselDeck:hover {
+    cursor: pointer;
+}
+
+.lastDeck, .nextDeck {
+    background-color: rgb(63, 156, 161);
+    color: white;
+    padding: 1rem 1.3rem;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.deckInvisible {
+    display: none;
+}
+
+.deckVisible {
+    display: block;
+}
+
+.carouselSlideOptions {
+    width: 8rem;
+}
+
+

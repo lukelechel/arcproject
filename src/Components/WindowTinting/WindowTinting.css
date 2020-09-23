@@ -1,0 +1,8 @@
+#beachImg {
+    width: 100%;
+    max-height: 21rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* pageTitle and pageDescription classes are handled by WindowTreatments.css */

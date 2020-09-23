@@ -1,0 +1,17 @@
+#navPath {
+    background-color: rgb(0, 126, 132);
+    height: 3rem;
+}
+
+#navPath h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.85rem 0 0 5rem;
+    word-spacing: 2px;
+}
+
+#currentPath {
+    font-weight: 800;
+}

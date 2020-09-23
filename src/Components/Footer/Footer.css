@@ -1,0 +1,71 @@
+#footerContainer {
+    background-color: rgb(47, 47, 47);
+    padding: 1.25rem 0;
+    text-align: center;
+}
+
+#footerContainer p {
+    font-size: 1.1rem;
+}
+
+#footerColumnContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footerContainer * {
+    color: white;
+}
+
+.footerColumn {
+    display: block;
+    width: 20%;
+}
+
+.columnTopper {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    min-height: 4rem;
+}
+
+#footerLogo {
+    width: 75%;
+}
+
+#contactColumn {
+    text-align: left;
+}
+
+.footerDivider {
+    background-color: #007e84;
+    height: 1px;
+    margin: 1rem 0 1.5rem 0;
+}
+
+#contactList li {
+    text-align: left;
+    display: flex;
+    margin: 0 0 1rem 0;
+}
+
+.vectorIcon {
+    max-width: 1.25rem;
+    max-height: 1.5rem;
+    margin: auto 1rem auto 0;
+}
+
+#missionColumn {
+    text-align: right;
+    line-height: 170%;
+}
+
+li {
+    font-size: 1.1rem;
+    line-height: 150%;
+}
+
+#threemauthorizationstamp {
+    max-width: 30rem;
+    padding: 3rem 0 1.5rem 0;
+}

@@ -1,0 +1,77 @@
+.consultSetupContainer {
+    max-width: 70rem;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#consultSetup-home {
+    margin-bottom: -17rem;
+    position: relative;
+    top: -20rem;
+}
+
+#consultSetup-portfolio {
+    margin-bottom: -8rem;
+    position: relative;
+    top: -8rem;
+}
+
+#consultSetupLabel {
+    background-color: rgb(0, 126, 132);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#consultSetupForm form {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+}
+
+#consultSetupLabel h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
+}
+
+#consultSetupLabel h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+#consultSetupForm input {
+    display: block;
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.5rem;
+    width: 90%;
+}
+#consultSetupForm input[type=text] {
+    margin: 1.5rem 0 1.5rem 1.25rem;
+}
+#consultSetupForm input[type=submit] {
+    margin: 1.5rem auto 0.5rem auto;
+    padding: 0.6rem 0.25rem;
+}
+#consultSetupForm input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.formColumn {
+    background-color: rgb(240, 240, 240);
+    width: 33%;
+}
+
+#consultSetupFormSubmit {
+    background-color: rgb(0, 126, 132);
+    color: white;
+    text-transform: uppercase;
+    max-width: 50%;
+    border-radius: 20px;
+}
+
+#consultSetupForm p {
+    font-size: 0.8rem;
+    text-align: center;
+}

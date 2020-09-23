@@ -1,0 +1,8 @@
+#logoDoor {
+    width: 100%;
+    max-height: 18rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* pageDescription class is handled by WindowTreatments.css */

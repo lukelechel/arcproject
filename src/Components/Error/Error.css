@@ -1,0 +1,9 @@
+#errorMessage {
+    padding: 3rem 0;
+    margin: 0 6rem;
+}
+
+#errorMessage h1 {
+    font-weight: 400;
+    padding-bottom: 1rem;
+}

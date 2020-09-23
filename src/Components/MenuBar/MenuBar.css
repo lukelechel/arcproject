@@ -1,0 +1,80 @@
+#menuBarContainer {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#menuBarContainer a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    width: 30%;
+    padding: 1.2rem 5rem;
+}
+#logo:hover {
+    cursor: pointer;
+}
+
+#menuBarRight {
+    display: block;
+    margin-right: 5rem;
+}
+
+#contactBar {
+    display: flex;
+    margin: 1rem auto;
+    list-style: none;
+    width: fit-content;
+}
+
+#contactBar li {
+    width: fit-content;
+    border-right: 1px solid #007e84;
+    padding: 0 1rem;
+    line-height: 150%;
+    height: fit-content;
+    vertical-align: middle;
+    font-size: 1.1rem;
+}
+#contactBar li:last-child {
+    border-right: none;
+}
+
+#threemLogo {
+    height: 1rem;
+    margin: 0 0.5rem 0.2rem 0;
+    vertical-align: middle;
+}
+
+#socialIcons {
+    display: flex;
+}
+
+#socialIcons * {
+    color: white;
+}
+#socialIcons li {
+    background-color: white;
+    padding: 0 0.3rem;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+}
+
+#socialIcons li img {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+#navBar {
+    list-style: none;
+    display: flex;
+    margin: 0 0 1rem 0;
+}
+
+#navBar li {
+    text-transform: uppercase;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+}

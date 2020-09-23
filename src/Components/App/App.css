@@ -1,0 +1,58 @@
+.pageContent {
+    margin: 0 5rem;
+}
+
+.exampleBlockSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    .mobileOnly {
+        display: none;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 769px) and (max-width: 1299px) {
+
+    .mobileOnly {
+        display: none;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    .desktopOnly {
+        display: none;
+    }
+
+    body {
+        margin: 0 0 5rem 0;
+    }
+
+    .pageContent {
+        margin: 0 3%;
+    }
+
+}
