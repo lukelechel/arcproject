@@ -51,13 +51,29 @@ const serviceLibrary = [
 ]
 
 class MenuBar extends React.Component {
+    constructor(props) {
+        super()
+
+        this.state = {
+            menuBarOpen: false
+        }
+    }
     render() {
         const logoClick = () => {
             return window.location.href='/'
         }
 
         const menuBarClick = () => {
-            console.log('menu bar clicked')
+            return this.state.menuBarOpen ? this.setState({menuBarOpen: false}) : this.setState({menuBarOpen: true})
+            // if (this.state.menuBarOpen) {
+            //     return this.setState({
+            //         menuBarOpen: false
+            //     })
+            // } else {
+            //     return this.setState({
+            //         menuBarOpen: true
+            //     })
+            // }
         }
 
         return (
@@ -151,6 +167,17 @@ class MenuBar extends React.Component {
                                 id="menuIcon"
                                 onClick={menuBarClick} />
                         </li>
+                    </ul>
+                    <ul id="mobileMenuList" className={this.state.menuBarOpen === true ? 'visible' : 'invisible'}>
+                        {
+                            navBarLibrary.map(x => {
+                                return (
+                                    <li key={x.name}>
+                                        <a href={x.linkSrc} alt={x.name}>{x.name}</a>
+                                    </li>
+                                )
+                            })
+                        }
                     </ul>
                 </div>
             </div>
