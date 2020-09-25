@@ -31,7 +31,7 @@ class Testimonials extends React.Component {
                 {
                     testimonialLibrary.map(x => {
                         return (
-                            <div className="testimonial">
+                            <div className="testimonial" key={x.name}>
                                 <p>{x.body}</p>
                                 <h1>{x.name}</h1>
                                 <h2>{x.title}</h2>

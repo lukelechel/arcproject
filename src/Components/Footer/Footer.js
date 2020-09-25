@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
             </div>
             <img src="../../resources/imgs/3m-authorized-image.png" alt="3M authorization stamp" id="threemauthorizationstamp" />
-            <p>Arc Window Treatments &amp; Tinting 2020 - All Rights Reserved</p>
+            <p id="rightsReservedNote">Arc Window Treatments &amp; Tinting 2020 - All Rights Reserved</p>
         </div>
     )
 }

@@ -39,14 +39,6 @@
     margin: 0 2rem;
 }
 
-#needFillColumnFirst {
-    border-right: 1px solid rgb(157, 157, 157);
-}
-
-#needFillColumnLast {
-    border-left: 1px solid rgb(157, 157, 157)
-}
-
 #needFillersContainer h1 {
     font-size: 2.25rem;
     font-weight: 400;
@@ -59,9 +51,9 @@
     text-transform: none;
     background-color: rgb(0, 126, 132);
     color: white;
-    padding: 0.6rem 0;
-    width: 60%;
-    border-radius: 20px;
+    padding: 0.6rem 2rem;
+    width: fit-content;
+    border-radius: 35px;
     margin: 0 auto;
 }
 
@@ -70,4 +62,124 @@
     color: rgb(157, 157, 157);
     word-spacing: 2px;
     height: 13rem;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    #needFillColumnFirst {
+        border-right: 1px solid rgb(157, 157, 157);
+    }
+    
+    #needFillColumnLast {
+        border-left: 1px solid rgb(157, 157, 157);
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 1299px) {
+
+    #needFillColumnFirst {
+        border-right: 1px solid rgb(157, 157, 157);
+    }
+    
+    #needFillColumnLast {
+        border-left: 1px solid rgb(157, 157, 157);
+    }
+    
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    #livingRoomImg {
+        width: 100%;
+        max-height: 30rem;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    #homePromo {
+        background-color: rgb(240, 240, 240);
+        padding: 1.25rem 2rem 1.25rem 2rem;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    #homePromo * {
+        color: rgb(0, 126, 132);
+    }
+    
+    #homePromo h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 120%;
+        margin: 2rem 1rem 1rem 0.5rem;
+        text-transform: uppercase;
+    }
+    
+    #homePromo p {
+        font-size: 1.7rem;
+        line-height: 150%;
+        margin: 1rem 1rem 3rem 1rem;
+    }
+
+    #needFillersContainer {
+        display: block;
+        margin: 0 0 10rem 0;
+    }
+
+    .needFillColumn {
+        margin: 3rem 1rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid rgb(157, 157, 157);
+    }
+    
+    #needFillColumnLast {
+        border-bottom: none;
+    }
+    
+    #needFillersContainer h1 {
+        font-size: 3rem;
+        height: unset;
+        line-height: 130%;
+        margin: 0 3rem 1rem 3rem;
+    }
+    
+    #needFillersContainer h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: none;
+        background-color: rgb(0, 126, 132);
+        color: white;
+        padding: 1rem 3rem;
+        margin: 0 auto;
+    }
+    
+    #needFillersContainer p {
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: rgb(157, 157, 157);
+        height: unset;
+        margin: 0 3rem 3rem 3rem;
+    }
+
 }

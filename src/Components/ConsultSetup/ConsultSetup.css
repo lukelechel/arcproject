@@ -5,12 +5,6 @@
     margin-right: auto;
 }
 
-#consultSetup-home {
-    margin-bottom: -17rem;
-    position: relative;
-    top: -20rem;
-}
-
 #consultSetup-portfolio {
     margin-bottom: -8rem;
     position: relative;
@@ -38,6 +32,7 @@
 #consultSetupLabel h2 {
     font-size: 1.6rem;
     font-weight: 400;
+    text-transform: none;
 }
 
 #consultSetupForm input {
@@ -53,6 +48,8 @@
 #consultSetupForm input[type=submit] {
     margin: 1.5rem auto 0.5rem auto;
     padding: 0.6rem 0.25rem;
+    max-width: 50%;
+    border-radius: 35px;
 }
 #consultSetupForm input[type=submit]:hover {
     cursor: pointer;
@@ -67,11 +64,95 @@
     background-color: rgb(0, 126, 132);
     color: white;
     text-transform: uppercase;
-    max-width: 50%;
-    border-radius: 20px;
 }
 
 #consultSetupForm p {
     font-size: 0.8rem;
     text-align: center;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    #consultSetup-home {
+        margin-bottom: -17rem;
+        position: relative;
+        top: -20rem;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 1299px) {
+
+    #consultSetup-home {
+        margin-bottom: -17rem;
+        position: relative;
+        top: -20rem;
+    }
+    
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+    
+    #consultSetupForm form {
+        display: block;
+        margin: 1 0 0 0;
+        padding: 2rem 0 3rem 0;
+    }
+
+    #consultSetupLabel {
+        padding: 1.5rem;
+    }
+
+    #consultSetupLabel h1 {
+        font-size: 2.7rem;
+        margin-bottom: 0.4rem;
+    }
+
+    #consultSetupLabel h2 {
+        font-size: 2.4rem;
+    }
+
+    #consultSetupForm input {
+        font-size: 1.5rem;
+        padding: 1rem 0.5rem;
+        justify-content: center;
+    }
+    #consultSetupForm input[type=text] {
+        margin: 0 0 1rem 1.25rem;
+    }
+    #consultSetupForm input[type=submit] {
+        margin: 1.5rem auto 0.5rem auto;
+        padding: 1rem 0.25rem;
+        font-size: 1.8rem;
+        max-width: 90%;
+        border-radius: 35px;
+    }
+
+    .formColumn {
+        width: 100%;
+    }
+    
+    #consultSetupForm p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
 }

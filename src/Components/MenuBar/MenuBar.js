@@ -56,52 +56,101 @@ class MenuBar extends React.Component {
             return window.location.href='/'
         }
 
+        const menuBarClick = () => {
+            console.log('menu bar clicked')
+        }
+
         return (
             <div id="menuBarContainer">
-                <img
-                    src="../../resources/imgs/logo.svg"
-                    alt="Arc Window Treatments and Tinting logo"
-                    id="logo"
-                    onClick={logoClick} />
-                <div id="menuBarRight">
-                    <ul id="contactBar">
+                <div id="desktopVersionContainer" className="desktopOnly">
+                    <img
+                        src="../../resources/imgs/logo.svg"
+                        alt="Arc Window Treatments and Tinting logo"
+                        id="logo"
+                        onClick={logoClick} />
+                    <div id="menuBarRight">
+                        <ul id="contactBar">
+                            <li>
+                                <a href="tel:765-701-8496">765.701.8496</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@arcwindowtreatments.com">Email Us</a>
+                            </li>
+                            <li>
+                                <img
+                                src="../../resources/imgs/3m-logo.svg"
+                                alt="3M logo"
+                                id="threemLogo" />
+                                Authorized Window Film Dealer
+                            </li>
+                            <li>
+                                <ul id="socialIcons">
+                                    {
+                                        serviceLibrary.map(x => {
+                                            return (
+                                                <li key={`${x.name}Icon`}>
+                                                    <img src={`${imgFilePath}${x.iconFileName}.svg`} alt="i" />
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="navBar">
+                            {
+                                navBarLibrary.map(x => {
+                                    return (
+                                        <li key={x.name}>
+                                            <a href={x.linkSrc} alt={x.name}>{x.name}</a>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div id="mobileVersionContainer" className="mobileOnly">
+                    <ul id="topNav">
                         <li>
-                            <a href="tel:765-701-8496">765.701.8496</a>
+                            <a href="tel:765-701-8496">
+                                <img
+                                    src="../resources/imgs/phone.svg"
+                                    alt="Phone"
+                                    className="vectorIcon" />
+                            </a>
                         </li>
                         <li>
-                            <a href="mailto:info@arcwindowtreatments.com">Email Us</a>
+                            <a href="mailto:info@arcwindowtreatments.com">
+                                <img
+                                    src="../resources/imgs/envelope.svg"
+                                    alt="Envelope"
+                                    className="vectorIcon" />
+                            </a>
                         </li>
-                        <li>
+                        <li id="mobileThreeMLogo">
                             <img
-                            src="../../resources/imgs/3m-logo.svg"
-                            alt="3M logo"
-                            id="threemLogo" />
-                            Authorized Window Film Dealer
-                        </li>
-                        <li>
-                            <ul id="socialIcons">
-                                {
-                                    serviceLibrary.map(x => {
-                                        return (
-                                            <li key={`${x.name}Icon`}>
-                                                <img src={`${imgFilePath}${x.iconFileName}.svg`} alt="i" />
-                                            </li>
-                                        )
-                                    })
-                                }
-                            </ul>
+                                src="../../resources/imgs/3m-logo.svg"
+                                alt="3M logo"
+                                id="threemLogo" />
+                                Authorized Window Film Dealer
                         </li>
                     </ul>
-                    <ul id="navBar">
-                        {
-                            navBarLibrary.map(x => {
-                                return (
-                                    <li key={x.name}>
-                                        <a href={x.linkSrc} alt={x.name}>{x.name}</a>
-                                    </li>
-                                )
-                            })
-                        }
+                    <ul id="bottomNav">
+                        <li id="mobileLogoContainer">
+                            <img
+                                src="../../resources/imgs/logo.svg"
+                                alt="Arc Window Treatments and Tinting logo"
+                                id="logo"
+                                onClick={logoClick} />
+                        </li>
+                        <li id="menuIconContainer">
+                            <img
+                                src="../../resources/imgs/bars.svg"
+                                alt="Menu icon"
+                                id="menuIcon"
+                                onClick={menuBarClick} />
+                        </li>
                     </ul>
                 </div>
             </div>

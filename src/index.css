@@ -25,6 +25,15 @@
   ul {
     list-style: none;
   }
+
+  .pageContent {
+    margin: 0 5rem;
+  }
+
+  .exampleBlockSection {
+    display: flex;
+    flex-wrap: wrap;
+  }
   
 /* ---------------------- */
 /* ---------------------- */
@@ -34,7 +43,9 @@
 
 @media only screen and (min-width: 1300px) {
 
-  
+  .mobileOnly {
+    display: none;
+  }
 
 }
 
@@ -46,7 +57,9 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1299px) {
 
-  
+  .mobileOnly {
+    display: none;
+  }
 
 }
 
@@ -58,6 +71,12 @@
 
 @media only screen and (max-width: 768px) {
 
-  
-  
+  .desktopOnly {
+    display: none;
+  }
+
+  .pageContent {
+    margin: 0 3%;
+  }
+
 }

@@ -1,9 +1,3 @@
-#menuBarContainer {
-    background-color: rgb(47, 47, 47);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-}
 #menuBarContainer a {
     color: white;
     text-decoration: none;
@@ -77,4 +71,103 @@
     text-transform: uppercase;
     margin-right: 3rem;
     font-size: 1.2rem;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    #desktopVersionContainer {
+        background-color: rgb(47, 47, 47);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 1299px) {
+
+    #desktopVersionContainer {
+        background-color: rgb(47, 47, 47);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 50%;
+        padding: 1.2rem 5rem 0 1rem;
+    }
+    
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    #mobileVersionContainer {
+        background-color: rgb(47, 47, 47);
+        color: white;
+        display: block;
+    }
+
+    #topNav, #bottomNav {
+        display: flex;
+        padding: 0.5rem 1rem 0.2rem 1rem;
+    }
+    #topNav {
+        float: right;
+    }
+    #topNav li {
+        font-size: 1rem;
+    }
+    #bottomNav {
+        border-top: 1px solid white;
+        justify-content: space-between;
+        clear: right;
+    }
+
+    .mobileOnly .vectorIcon {
+        min-width: 2rem;
+        min-height: 2rem;
+    }
+
+    #mobileThreeMLogo * {
+        display: block;
+    }
+    #threemLogo {
+        height: 1rem;
+    }
+
+    #logo {
+        width: 80%;
+        padding: 0.5rem;
+    }
+
+    #menuIconContainer {
+        margin: auto 1rem auto auto;
+    }
+
+    #menuIcon {
+        width: 1.5rem;
+    }
+    #menuIcon:hover {
+        cursor: pointer;
+    }
+
 }

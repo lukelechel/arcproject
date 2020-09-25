@@ -24,7 +24,6 @@
 
 .columnTopper {
     font-size: 1.5rem;
-    font-weight: 400;
     text-transform: uppercase;
     min-height: 4rem;
 }
@@ -50,8 +49,6 @@
 }
 
 .vectorIcon {
-    max-width: 1.25rem;
-    max-height: 1.5rem;
     margin: auto 1rem auto 0;
 }
 
@@ -68,4 +65,96 @@ li {
 #threemauthorizationstamp {
     max-width: 30rem;
     padding: 3rem 0 1.5rem 0;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    .vectorIcon {
+        max-width: 1.25rem;
+        max-height: 1.5rem;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 1299px) {
+
+    .vectorIcon {
+        max-width: 1.25rem;
+        max-height: 1.5rem;
+    }
+    
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    #footerContainer {
+        padding: 2rem 3%;
+    }
+
+    #footerContainer p, li {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    #footerContainer a {
+        font-size: 1.3rem;
+    }
+
+    #footerColumnContainer {
+        display: unset;
+    }
+
+    .footerColumn {
+        width: unset;
+        padding-bottom: 5rem;
+    }
+    
+    .columnTopper {
+        font-size: 2.7rem;
+        text-align: left;
+        min-height: 0;
+        padding: 0.7rem 0;
+    }
+
+    #footerLogo {
+        width: 20rem;
+    }
+
+    .vectorIcon {
+        width: 2rem;
+        max-height: 2rem;
+    }
+    
+    #missionColumn {
+        text-align: left;
+        line-height: 300%;
+    }
+
+    #threemauthorizationstamp {
+        max-width: 90%;
+        padding: 3rem 0 1.5rem 0;
+    }
+
+    p#rightsReservedNote {
+        text-align: center;
+    }
+
 }
