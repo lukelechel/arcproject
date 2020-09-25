@@ -1,6 +1,6 @@
 #navPath {
     background-color: rgb(0, 126, 132);
-    height: 3rem;
+    min-height: 3rem;
 }
 
 #navPath h1 {
@@ -8,7 +8,6 @@
     font-weight: 400;
     color: white;
     text-transform: uppercase;
-    padding: 0.85rem 0 0 5rem;
     word-spacing: 2px;
 }
 
@@ -24,7 +23,9 @@
 
 @media only screen and (min-width: 1300px) {
 
-    
+    #navPath h1 {
+        padding: 0.85rem 0 0 5rem;
+    }
 
 }
 
@@ -36,6 +37,14 @@
 
 @media only screen and (min-width: 900px) and (max-width: 1299px) {
 
+    #navPath {
+        padding: 0 0 1rem 0;
+    }
+
+    #navPath h1 {
+        font-size: 1.5rem;
+        padding: 0.85rem 0 0 5rem;
+    }
     
 }
 
@@ -48,12 +57,12 @@
 @media only screen and (max-width: 899px) {
 
     #navPath {
-        padding: 0 0 0 0;
+        padding: 0 0 1rem 0;
     }
     
     #navPath h1 {
         font-size: 1.5rem;
-        padding: auto 0 auto 5rem;
+        padding: 0.85rem 0 0 1rem;
     }
 
 }
