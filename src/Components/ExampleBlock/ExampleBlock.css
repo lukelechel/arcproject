@@ -29,7 +29,7 @@
     text-transform: none;
     max-width: fit-content;
     padding: 0.5rem 3rem;
-    border-radius: 20px;
+    border-radius: 35px;
     margin: 1.75rem 0;
 }
 .exampleBlock h2:hover {
@@ -39,4 +39,57 @@
 .buttonSection {
     display: flex;
     justify-content: space-around;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 1299px) {
+
+    
+    
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    .exampleBlock {
+        max-width: 100%;
+        margin: 3rem 0;
+    }
+
+    .exampleBlock img {
+        width: 100%;
+    }
+
+    .buttonSection {
+        justify-content: space-around;
+    }
+    .exampleBlock h2 {
+        font-weight: 400;
+        max-width: fit-content;
+        padding: 0.6rem 1.5rem;
+        border-radius: 35px;
+    }
+
 }

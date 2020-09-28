@@ -5,11 +5,11 @@
     margin-right: auto;
 }
 
-#consultSetup-portfolio {
+/* #consultSetup-portfolio {
     margin-bottom: -8rem;
     position: relative;
     top: -8rem;
-}
+} */
 
 #consultSetupLabel {
     background-color: rgb(0, 126, 132);
@@ -85,6 +85,12 @@
         top: -20rem;
     }
 
+    #consultSetup-portfolio {
+        margin-bottom: -8rem;
+        position: relative;
+        top: -8rem;
+    }
+
 }
 
 /* ---------------------- */
@@ -100,6 +106,12 @@
         position: relative;
         top: -20rem;
     }
+
+    #consultSetup-portfolio {
+        margin-bottom: -8rem;
+        position: relative;
+        top: -8rem;
+    }
     
 }
 
@@ -110,6 +122,10 @@
 /* ---------------------- */
 
 @media only screen and (max-width: 899px) {
+
+    #consultSetup-portfolio {
+        margin: -1% -5%;
+    }
     
     #consultSetupForm form {
         display: block;
@@ -122,17 +138,17 @@
     }
 
     #consultSetupLabel h1 {
-        font-size: 2.7rem;
+        font-size: 1.9rem;
         margin-bottom: 0.4rem;
     }
 
     #consultSetupLabel h2 {
-        font-size: 2.4rem;
+        font-size: 1.7rem;
     }
 
     #consultSetupForm input {
-        font-size: 1.5rem;
-        padding: 1rem 0.5rem;
+        font-size: 1rem;
+        padding: 0.75rem 0.5rem;
         justify-content: center;
     }
     #consultSetupForm input[type=text] {
@@ -140,8 +156,8 @@
     }
     #consultSetupForm input[type=submit] {
         margin: 1.5rem auto 0.5rem auto;
-        padding: 1rem 0.25rem;
-        font-size: 1.8rem;
+        padding: 0.6rem 0.25rem;
+        font-size: 1.3rem;
         max-width: 90%;
         border-radius: 35px;
     }
@@ -151,7 +167,7 @@
     }
     
     #consultSetupForm p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
     }
 

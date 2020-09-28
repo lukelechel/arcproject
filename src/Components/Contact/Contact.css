@@ -88,3 +88,61 @@
     color: rgb(157, 157, 157);
     margin: 1rem 0;
 }
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 1299px) {
+
+    
+    
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    #phoneTitle {
+        font-size: 2.5rem;
+    }
+
+    #tallTitle {
+        font-size: 1rem;
+    }
+
+    .tallSectionLead {
+        font-size: 2rem;
+    }
+
+    #sideBySideContent {
+        display: block;
+    }
+
+    #contactFormContainer {
+        margin-right: unset;
+    }
+    
+    #serviceLocationsContainer {
+        margin-top: 3rem;
+    }
+
+}
