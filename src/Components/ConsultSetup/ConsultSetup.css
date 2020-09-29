@@ -5,12 +5,6 @@
     margin-right: auto;
 }
 
-/* #consultSetup-portfolio {
-    margin-bottom: -8rem;
-    position: relative;
-    top: -8rem;
-} */
-
 #consultSetupLabel {
     background-color: rgb(0, 126, 132);
     color: white;
@@ -101,10 +95,17 @@
 
 @media only screen and (min-width: 900px) and (max-width: 1299px) {
 
+    .consultSetupContainer {
+        max-width: 60rem;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #consultSetup-home {
-        margin-bottom: -17rem;
+        margin-bottom: -22rem;
         position: relative;
-        top: -20rem;
+        top: -22rem;
     }
 
     #consultSetup-portfolio {

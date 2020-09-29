@@ -46,8 +46,8 @@ const Contact = () => {
                         <p>Schedule an appointment today to get the process started!</p>
                     </div>
                 </div>
-                <FourTopics />
             </div>
+            <FourTopics />
             <Footer />
         </div>
   )

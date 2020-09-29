@@ -44,9 +44,8 @@ class OurPortfolio extends React.Component {
                     <Carousel carouselTitle="Safety &amp; Security Film" carouselLibrary={safetySecurityFilmCarouselLibrary} />
                     <Carousel carouselTitle="Decorative Film" carouselLibrary={decorativeFilmLibrary} />
                     <Carousel carouselTitle="Custom Film &amp; Graphics" carouselLibrary={customFilmGraphicsCarouselLibrary} />
-    
-                    <FourTopics />
                 </div>
+                <FourTopics />
                 <Footer />
             </div>
       )

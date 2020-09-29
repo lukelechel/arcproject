@@ -19,8 +19,8 @@ const CurrentPromotions = () => {
                     src="../../resources/imgs/graber-motorization-wand-sell-sheet.jpg"
                     alt="Graber Motorized Wand flyer"
                     className="flyer" />
-                <FourTopics />
             </div>
+            <FourTopics />
             <Footer />
         </div>
   )

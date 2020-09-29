@@ -52,8 +52,8 @@ const WindowTinting = () => {
                 <div className="exampleBlockSection">
                     <ExampleBlock blockLibrary={windowTintingLibrary} />
                 </div>
-                <FourTopics />
             </div>
+            <FourTopics />
             <Footer />
         </div>
   )

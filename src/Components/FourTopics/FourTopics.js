@@ -20,7 +20,7 @@ const topicList = [
         name: "Motorization",
         imgFileName: "Site-Grid-Motorization.jpg",
         imgAlt: "Remote control raising or lowering window treatments",
-        link: 'window-treatments/motorization'
+        link: 'error'
     },
     {
         name: "Current Promotions",

@@ -59,8 +59,8 @@ const WindowTreatments = () => {
                 <div className="exampleBlockSection">
                     <ExampleBlock blockLibrary={windowTreatmentLibrary} />
                 </div>
-                <FourTopics />
             </div>
+            <FourTopics />
             <Footer />
         </div>
   )

@@ -90,6 +90,18 @@
 
 @media only screen and (min-width: 900px) and (max-width: 1299px) {
 
+    #needFillersContainer {
+        margin: 6rem auto;
+    }
+
+    #homePromo {
+        padding: 1.25rem 2rem 1.5rem 2rem;
+        width: 50%;
+        position: relative;
+        top: -25rem;
+        left: 5rem;
+    }
+
     #needFillColumnFirst {
         border-right: 1px solid rgb(157, 157, 157);
     }
