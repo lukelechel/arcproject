@@ -143,8 +143,8 @@
     }
 
     .mobileOnly .vectorIcon {
-        min-width: 2rem;
-        min-height: 2rem;
+        min-width: 1.6rem;
+        min-height: 1.6rem;
     }
 
     #mobileThreeMLogo * {

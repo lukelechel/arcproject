@@ -7,22 +7,26 @@ const topicList = [
     {
         name: "Window Treatments",
         imgFileName: "Site-Grid-Treatment.jpg",
-        imgAlt: "hi"
+        imgAlt: "Window treatments",
+        link: 'window-treatments'
     },
     {
         name: "Window Tinting",
         imgFileName: "Site-Grid-Tinting.jpg",
-        imgAlt: "hi"
+        imgAlt: "Tinted windows",
+        link: 'window-tinting'
     },
     {
         name: "Motorization",
         imgFileName: "Site-Grid-Motorization.jpg",
-        imgAlt: "hi"
+        imgAlt: "Remote control raising or lowering window treatments",
+        link: 'window-treatments/motorization'
     },
     {
         name: "Current Promotions",
         imgFileName: "Site-Grid-Promotion.jpg",
-        imgAlt: "hi"
+        imgAlt: "Inside a home with window treatments",
+        link: 'current-promotions'
     }
 ]
 
@@ -32,12 +36,12 @@ const FourTopics = () => {
         {
             topicList.map(x => {
                 return (
-                    <div className="topicContainer" key={x.name}>
+                    <a href={`./${x.link}`} className="topicContainer" key={x.name}>
                         <img src={`${imgPrefix}${x.imgFileName}`} alt={x.imgAlt} />
                         <div id="topicTitleContainer">
                             <p id="topicTitle">{x.name}</p>
                         </div>
-                    </div>
+                    </a>
                 )
             })
         }

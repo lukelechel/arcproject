@@ -4,6 +4,7 @@ import './App.css';
 
 import Home from '../Home/Home'
 import WindowTreatments from '../WindowTreatments/WindowTreatments'
+import CurrentPromotions from '../CurrentPromotions/CurrentPromotions'
 import WindowTinting from '../WindowTinting/WindowTinting'
 import OurPortfolio from '../OurPortfolio/OurPortfolio'
 import Contact from '../Contact/Contact'
@@ -16,6 +17,7 @@ const App = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/window-treatments" component={WindowTreatments} exact />
+          <Route path="/current-promotions" component={CurrentPromotions} exact />
           <Route path="/window-tinting" component={WindowTinting} exact />
           <Route path="/portfolio" component={OurPortfolio} exact />
           <Route path="/contact" component={Contact} exact />

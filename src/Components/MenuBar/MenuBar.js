@@ -6,19 +6,19 @@ const imgFilePath = '../../resources/imgs/'
 const navBarLibrary = [
     {
         name: 'Window Treatments',
-        linkSrc: './window-treatments'
+        linkSrc: 'window-treatments'
     },
     {
         name: 'Window Tinting',
-        linkSrc: './window-tinting'
+        linkSrc: 'window-tinting'
     },
     {
         name: 'Our Portfolio',
-        linkSrc: './portfolio'
+        linkSrc: 'portfolio'
     },
     {
         name: 'Contact',
-        linkSrc: './contact'
+        linkSrc: 'contact'
     }
 ]
 
@@ -65,15 +65,6 @@ class MenuBar extends React.Component {
 
         const menuBarClick = () => {
             return this.state.menuBarOpen ? this.setState({menuBarOpen: false}) : this.setState({menuBarOpen: true})
-            // if (this.state.menuBarOpen) {
-            //     return this.setState({
-            //         menuBarOpen: false
-            //     })
-            // } else {
-            //     return this.setState({
-            //         menuBarOpen: true
-            //     })
-            // }
         }
 
         return (
@@ -118,7 +109,7 @@ class MenuBar extends React.Component {
                                 navBarLibrary.map(x => {
                                     return (
                                         <li key={x.name}>
-                                            <a href={x.linkSrc} alt={x.name}>{x.name}</a>
+                                            <a href={`./${x.linkSrc}`} alt={x.name}>{x.name}</a>
                                         </li>
                                     )
                                 })
@@ -173,7 +164,7 @@ class MenuBar extends React.Component {
                             navBarLibrary.map(x => {
                                 return (
                                     <li key={x.name}>
-                                        <a href={x.linkSrc} alt={x.name}>{x.name}</a>
+                                        <a href={`./${x.linkSrc}`} alt={x.name}>{x.name}</a>
                                     </li>
                                 )
                             })

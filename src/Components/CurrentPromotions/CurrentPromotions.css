@@ -1,0 +1,25 @@
+#currentPromoContainer h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 2rem;
+}
+
+.flyer {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    .flyer {
+        max-width: 100%;
+    }
+
+}

@@ -8,14 +8,6 @@
     text-transform: uppercase;
 }
 
-.invisible {
-    display: none;
-}
-
-.visible {
-    display: block;
-}
-
 .slideLine {
     display: flex;
     justify-content: center;
@@ -75,3 +67,40 @@
 }
 
 
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 1299px) {
+
+    
+    
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    .carouselTitle {
+        font-size: 2.5rem;
+    }
+
+}
