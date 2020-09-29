@@ -49,6 +49,14 @@ class Carousel extends React.Component {
         })
     }
 
+    backDeck() {
+        return console.log('backward deck')
+    }
+
+    forwardDeck() {
+        return console.log('forward deck')
+    }
+
     render() {
         return (
             <div id={`${this.props.carouselTitle}Carousel`} className="carouselContainer">
