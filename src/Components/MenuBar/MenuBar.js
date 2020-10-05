@@ -51,14 +51,18 @@ const serviceLibrary = [
 ]
 
 class MenuBar extends React.Component {
+
     constructor(props) {
         super()
 
         this.state = {
             menuBarOpen: false
         }
+
     }
+
     render() {
+        
         const logoClick = () => {
             return window.location.href='/'
         }

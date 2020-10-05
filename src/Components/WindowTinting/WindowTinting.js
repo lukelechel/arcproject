@@ -40,7 +40,7 @@ const windowTintingLibrary = [
     }
 ]
 
-const WindowTinting = () => {
+function WindowTinting() {
     return (
         <div>
             <MenuBar />
@@ -56,7 +56,26 @@ const WindowTinting = () => {
             <FourTopics />
             <Footer />
         </div>
-  )
+    )
 }
+
+// const WindowTinting = () => {
+//     return (
+//         <div>
+//             <MenuBar />
+//             <NavPath path={currentPath} />
+//             <img src="../../resources/imgs/Window-Tinting-Banner.jpg" alt="Tinted windows inside a house facing a beach" id="beachImg" />
+//             <div className="pageContent">
+//                 <h1 className="pageTitle">Window Tinting</h1>
+//                 <p className="pageDescription">Window film (tinting) has a multitude of uses in a home or business that can be applied to your existing glass. A sun control film is a perfect solution for reducing the glare, heat or fading without the sacrifice of the view, while decorative films create varying amounts of privacy or the exact unique look you are trying to achieve. There are also security window films available that are designed to deter forced entry.</p>
+//                 <div className="exampleBlockSection">
+//                     <ExampleBlock blockLibrary={windowTintingLibrary} />
+//                 </div>
+//             </div>
+//             <FourTopics />
+//             <Footer />
+//         </div>
+//     )
+// }
 
 export default WindowTinting

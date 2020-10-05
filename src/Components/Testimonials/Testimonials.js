@@ -24,24 +24,22 @@ const testimonialLibrary = [
     }
 ]
 
-class Testimonials extends React.Component {
-    render() {
-        return (
-            <div id="testimonialContainer">
-                {
-                    testimonialLibrary.map(x => {
-                        return (
-                            <div className="testimonial" key={x.name}>
-                                <p>{x.body}</p>
-                                <h1>{x.name}</h1>
-                                <h2>{x.title}</h2>
-                            </div>
-                        )
-                    })
-                }
-            </div>
-        )
-    }
+function Testimonials() {
+    return (
+        <div id="testimonialContainer">
+            {
+                testimonialLibrary.map(x => {
+                    return (
+                        <div className="testimonial" key={x.name}>
+                            <p>{x.body}</p>
+                            <h1>{x.name}</h1>
+                            <h2>{x.title}</h2>
+                        </div>
+                    )
+                })
+            }
+        </div>
+    )
 }
 
 export default Testimonials;

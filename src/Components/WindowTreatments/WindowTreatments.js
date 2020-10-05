@@ -47,7 +47,7 @@ const windowTreatmentLibrary = [
     }
 ]
 
-const WindowTreatments = () => {
+function WindowTreatments() {
     return (
         <div>
             <MenuBar />
@@ -63,7 +63,7 @@ const WindowTreatments = () => {
             <FourTopics />
             <Footer />
         </div>
-  )
+    )
 }
 
 export default WindowTreatments
