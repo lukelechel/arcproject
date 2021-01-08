@@ -1,5 +1,5 @@
-import React from 'react';
-import './FourTopics.css';
+import React from 'react'
+import './FourTopics.css'
 
 const imgPrefix = "../../resources/imgs/"
 
@@ -30,23 +30,15 @@ const topicList = [
     }
 ]
 
-const FourTopics = () => {
-  return (
-    <div id="fourTopicsContainer">
-        {
-            topicList.map(x => {
-                return (
-                    <a href={`./${x.link}`} className="topicContainer" key={x.name}>
-                        <img src={`${imgPrefix}${x.imgFileName}`} alt={x.imgAlt} />
-                        <div id="topicTitleContainer">
-                            <p id="topicTitle">{x.name}</p>
-                        </div>
-                    </a>
-                )
-            })
-        }
-    </div>
-  )
-}
+const FourTopics = () => (<div id="fourTopicsContainer">
+    {
+        topicList.map(x => (<a href={`./${x.link}`} className="topicContainer" key={x.name}>
+            <img src={`${imgPrefix}${x.imgFileName}`} alt={x.imgAlt} />
+            <div id="topicTitleContainer">
+                <p id="topicTitle">{x.name}</p>
+            </div>
+        </a>))
+    }
+</div>)
 
-export default FourTopics;
+export default FourTopics
