@@ -22,4 +22,4 @@ const App = () => (<BrowserRouter>
     </Switch>
 </BrowserRouter>)
 
-export default App;
+export default App
