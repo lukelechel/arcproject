@@ -6,11 +6,9 @@ import NavPath from '../NavPath/NavPath'
 import FourTopics from '../FourTopics/FourTopics'
 import Footer from '../Footer/Footer'
 
-const currentPath = "Portfolio"
-
 const Contact = () => (<div>
     <MenuBar />
-    <NavPath path={currentPath} />
+    <NavPath path="Contact" />
     <img
         src="../../resources/imgs/google-maps-lafayette.png"
         alt="Google Maps display of Lafayette, IN"

@@ -1,13 +1,11 @@
-import React from 'react';
-import './WindowTreatments.css';
+import React from 'react'
+import './WindowTreatments.css'
 
 import MenuBar from '../MenuBar/MenuBar'
 import NavPath from '../NavPath/NavPath'
 import ExampleBlock from '../ExampleBlock/ExampleBlock'
 import FourTopics from '../FourTopics/FourTopics'
 import Footer from '../Footer/Footer'
-
-const currentPath = "Window Treatments"
 
 const windowTreatmentLibrary = [
     {
@@ -43,27 +41,23 @@ const windowTreatmentLibrary = [
         title: "Motorization",
         body: "Motorization allows treatments to open and close at the touch of a button. Convenient and easy to use, our options can fit every budget. Powered by a quiet motor and controlled by remote, motorization is a great solution for hard to reach windows.",
         moreInfoLink: "",
-        portfolioLink: null
+        portfolioLink: ""
     }
 ]
 
-function WindowTreatments() {
-    return (
-        <div>
-            <MenuBar />
-            <NavPath path={currentPath} />
-            <img src="../../resources/imgs/Window-Tinting-Header.jpg" alt="Window treatments in a bedroom" id="bedroomImg" />
-            <div className="pageContent">
-                <h1 className="pageTitle">Window Treatments</h1>
-                <p className="pageDescription">Window treatments are an area where style and functionality come together in a home or business. Our wide selection of styles, sizes, colors and controls allow you to strike the perfect balance of looking beautiful and working for you exactly the way you need.</p>
-                <div className="exampleBlockSection">
-                    <ExampleBlock blockLibrary={windowTreatmentLibrary} />
-                </div>
-            </div>
-            <FourTopics />
-            <Footer />
+const WindowTreatments = () => (<div>
+    <MenuBar />
+    <NavPath path="Window Treatments" />
+    <img src="../../resources/imgs/Window-Tinting-Header.jpg" alt="Window treatments in a bedroom" id="bedroomImg" />
+    <div className="pageContent">
+        <h1 className="pageTitle">Window Treatments</h1>
+        <p className="pageDescription">Window treatments are an area where style and functionality come together in a home or business. Our wide selection of styles, sizes, colors and controls allow you to strike the perfect balance of looking beautiful and working for you exactly the way you need.</p>
+        <div className="exampleBlockSection">
+            <ExampleBlock blockLibrary={windowTreatmentLibrary} />
         </div>
-    )
-}
+    </div>
+    <FourTopics />
+    <Footer />
+</div>)
 
 export default WindowTreatments

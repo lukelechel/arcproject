@@ -1,6 +1,7 @@
 .exampleBlock {
     max-width: 24.5rem;
     margin: 3rem 1rem;
+    display: inline-block;
 }
 
 .exampleBlock * {
@@ -9,6 +10,7 @@
 
 .exampleBlock img {
     width: 24.5rem;
+    height: 24.5rem;
 }
 
 .blockExTitle {

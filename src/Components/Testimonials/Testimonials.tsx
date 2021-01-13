@@ -1,5 +1,5 @@
-import React from 'react';
-import './Testimonials.css';
+import React from 'react'
+import './Testimonials.css'
 
 const testimonialLibrary = [
     {
@@ -24,22 +24,13 @@ const testimonialLibrary = [
     }
 ]
 
-function Testimonials() {
-    return (
-        <div id="testimonialContainer">
-            {
-                testimonialLibrary.map(x => {
-                    return (
-                        <div className="testimonial" key={x.name}>
-                            <p>{x.body}</p>
-                            <h1>{x.name}</h1>
-                            <h2>{x.title}</h2>
-                        </div>
-                    )
-                })
-            }
-        </div>
-    )
-}
+const Testimonials = () => (<div id="testimonialContainer">
+    {testimonialLibrary.map(x => { return (<div className="testimonial" key={x.name}>
+        <p>{x.body}</p>
+        <h1>{x.name}</h1>
+        <h2>{x.title}</h2>
+    </div>)
+    })}
+</div>)
 
 export default Testimonials;
