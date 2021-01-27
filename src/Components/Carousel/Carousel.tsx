@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Carousel.css'
 
 const imgPrefix = "../../resources/imgs/"
 
 export default function Carousel(props:any) {
+
+    useEffect(() => {
+        const lib = props.carouselLibrary
+        setCarouselLength(lib.length)
+    }, [props])
 
     const [carouselIndex, setCarouselIndex] = useState(0)
     const [carouselLength, setCarouselLength] = useState(Number)
