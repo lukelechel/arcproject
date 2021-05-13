@@ -12,7 +12,7 @@ interface ExampleBlockBase {
 }
 
 const ExampleBlock = ({ blockLibrary }: { blockLibrary: ExampleBlockBase[] }) => {return (<div>
-    {blockLibrary.map(x => (<div id={`${x.title}Block`} className="exampleBlock" key={x.title}>
+    {blockLibrary.map((x, i) => (<div id={`${x.title}Block`} className="exampleBlock" key={i}>
         <img
             src={`${imgPrefix}${x.imgFileName}.jpg`}
             alt={x.title}

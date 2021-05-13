@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './MenuBar.css'
+import { Link } from 'react-router-dom'
 
 const imgFilePath = '../../resources/imgs/'
 
@@ -75,32 +76,23 @@ export default function MenuBar() {
                     </li>
                     <li>
                         <img
-                        src="../../resources/imgs/3m-logo.svg"
-                        alt="3M logo"
-                        id="threemLogo" />
+                            src="../../resources/imgs/3m-logo.svg"
+                            alt="3M logo"
+                            id="threemLogo" />
                         Authorized Window Film Dealer
                     </li>
                     <li>
                         <ul id="socialIcons">
-                            {serviceLibrary.map(x => {
-                                return (
-                                    <li key={`${x.name}Icon`}>
-                                        <img src={`${imgFilePath}${x.iconFileName}.svg`} alt="i" />
-                                    </li>
-                                )
-                            })}
+                            {serviceLibrary.map((x, i) => (<li key={i}>
+                                    <img src={`${imgFilePath}${x.iconFileName}.svg`} alt={`${x.name} logo`} />
+                                </li>
+                            ))}
                         </ul>
                     </li>
                 </ul>
-                <ul id="navBar">
-                    {navBarLibrary.map(x => {
-                        return (
-                            <li key={x.name}>
-                                <a href={`./${x.linkSrc}`}>{x.name}</a>
-                            </li>
-                        )
-                    })}
-                </ul>
+                <div id="navBar">
+                    {navBarLibrary.map((x, i) => (<Link key={i} to={x.linkSrc}>{x.name}</Link>))}
+                </div>
             </div>
         </div>
         <div id="mobileVersionContainer" className="mobileOnly">
@@ -146,13 +138,9 @@ export default function MenuBar() {
                 </li>
             </ul>
             <ul id="mobileMenuList" className={menuBarOpen ? 'visible' : 'invisible'}>
-                {navBarLibrary.map(x => {
-                    return (
-                        <li key={x.name}>
-                            <a href={`./${x.linkSrc}`}>{x.name}</a>
-                        </li>
-                    )
-                })}
+                {navBarLibrary.map((x, i) => (<li key={i}>
+                    <a href={`./${x.linkSrc}`}>{x.name}</a>
+                </li>))}
             </ul>
         </div>
     </div>)

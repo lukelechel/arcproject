@@ -1,5 +1,6 @@
 import React from 'react'
 import './FourTopics.css'
+import { Link } from 'react-router-dom'
 
 const imgPrefix = "../../resources/imgs/"
 
@@ -32,12 +33,12 @@ const topicList = [
 
 const FourTopics = () => (<div id="fourTopicsContainer">
     {
-        topicList.map(x => (<a href={`./${x.link}`} className="topicContainer" key={x.name}>
+        topicList.map((x, i) => (<Link to={`/${x.link}`} className="topicContainer" key={i}>
             <img src={`${imgPrefix}${x.imgFileName}`} alt={x.imgAlt} />
             <div id="topicTitleContainer">
                 <p id="topicTitle">{x.name}</p>
             </div>
-        </a>))
+        </Link>))
     }
 </div>)
 

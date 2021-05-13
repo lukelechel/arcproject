@@ -20,7 +20,10 @@ const customFilmGraphicsCarouselLibrary = require('./customFilmGraphicsCarouselL
 const OurPortfolio = () => (<div>
     <MenuBar />
     <NavPath path="Portfolio" />
-    <img src="../../resources/imgs/Portfolio-Banner_1.jpg" alt="Arc Window Treatments and Tinting logo on glass" id="logoDoor" />
+    <img
+        src="../../resources/imgs/Portfolio-Banner_1.jpg"
+        alt="Arc Window Treatments and Tinting logo on glass"
+        id="logoDoor" />
     <div className="pageContent">
         <ConsultSetup id="portfolio" />
         <p className="pageDescription">We’ve done everything… from blinds, shades, shutters, &amp; drapery to sun control and security window films. Scroll below to see our many projects!</p>

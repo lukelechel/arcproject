@@ -67,7 +67,7 @@
     margin: 0 0 1rem 0;
 }
 
-#navBar li {
+#navBar>* {
     text-transform: uppercase;
     margin-right: 3rem;
     font-size: 1.2rem;
@@ -106,7 +106,7 @@
     }
 
     #logo {
-        width: 50%;
+        width: 30%;
         padding: 1.2rem 5rem 0 1rem;
     }
     

@@ -25,12 +25,11 @@ const testimonialLibrary = [
 ]
 
 const Testimonials = () => (<div id="testimonialContainer">
-    {testimonialLibrary.map(x => { return (<div className="testimonial" key={x.name}>
+    {testimonialLibrary.map((x, i) => (<div className="testimonial" key={i}>
         <p>{x.body}</p>
         <h1>{x.name}</h1>
         <h2>{x.title}</h2>
-    </div>)
-    })}
+    </div>))}
 </div>)
 
-export default Testimonials;
+export default Testimonials
